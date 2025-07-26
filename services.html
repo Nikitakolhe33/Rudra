@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services - Rudra Metal</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar-brand i {
+      color: #0d6efd;
+    }
+
+    .services-section {
+      padding: 80px 20px;
+      background: linear-gradient(to bottom right, #f3f5f7, #ffffff);
+    }
+
+    .section-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #0d6efd;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .service-card {
+      background-color: #080808;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(73, 69, 69, 0.1);
+      transition: all 0.4s ease-in-out;
+      text-align: center;
+      color: #e3f2fd;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card i {
+      font-size: 40px;
+      color: #7ea8ec;
+      margin-bottom: 20px;
+    }
+
+    .service-card h5 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .service-card {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="vision.html">Vision</a></li>
+              <li><a class="dropdown-item text-white" href="mission.html">Mission</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="operation.html">Operation</a></li>
+              <li><a class="dropdown-item text-white" href="clientele.html">Clientele</a></li>
+              <li><a class="dropdown-item text-white" href="quality.html">Quality</a></li>
+              <li><a class="dropdown-item text-white" href="infrastructure.html">Infrastructure</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Core Value</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="safety.html">Safety</a></li>
+              <li><a class="dropdown-item text-white" href="customer.html">Customer</a></li>
+              <li><a class="dropdown-item text-white" href="quality-core.html">Quality</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeInDown">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4 animate__animated animate__fadeInUp">
+          <div class="service-card h-100">
+            <i class="fas fa-cogs"></i>
+            <h5>Custom Metal Fabrication</h5>
+            <p>We offer precision metal cutting, welding, and assembling services for all types of industrial components.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="service-card h-100">
+            <i class="fas fa-industry"></i>
+            <h5>Industrial Machinery Parts</h5>
+            <p>Manufacturing high-performance machine parts tailored to client requirements and international standards.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="service-card h-100">
+            <i class="fas fa-recycle"></i>
+            <h5>Recycling & Refining</h5>
+            <p>We recycle and refine scrap metals into reusable raw material, ensuring sustainability and efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Rudra Metal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #e4dcdc;
+      color: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background-color: #111;
+    }
+
+    .navbar .nav-link {
+      color: white;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #1d1b1b;
+    }
+
+    .contact-section {
+      padding: 100px 0;
+      background: linear-gradient(145deg, #fffcfc, #f5f1f1);
+    }
+
+    .section-title {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .contact-box {
+      background: rgba(15, 15, 15, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    }
+
+    .contact-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 40px rgba(14, 1, 1, 0.911);
+    }
+
+    .contact-box i {
+      font-size: 3rem;
+      color: #0c0c0c;
+      margin-bottom: 20px;
+    }
+
+    .contact-box h5 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #050505;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: #0e0d0d;
+      font-size: 16px;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="vision.html">Vision</a></li>
+              <li><a class="dropdown-item text-white" href="mission.html">Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Product</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="operation.html">Operation</a></li>
+              <li><a class="dropdown-item text-white" href="clientele.html">Clientele</a></li>
+              <li><a class="dropdown-item text-white" href="quality.html">Quality</a></li>
+              <li><a class="dropdown-item text-white" href="infrastructure.html">Infrastructure</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Core Value</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white" href="safety.html">Safety</a></li>
+              <li><a class="dropdown-item text-white" href="customer.html">Customer</a></li>
+              <li><a class="dropdown-item text-white" href="quality-core.html">Quality</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section text-center">
+    <div class="container">
+      <h3 class="section-title">📞 Contact Information</h3>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="contact-box">
+            <i class="fas fa-phone"></i>
+            <h5>Phone</h5>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <h5>Email</h5>
+            <p>info@rudrametal.in</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h5>Address</h5>
+            <p>Plot No. 23, MIDC Industrial Area, Nashik, Maharashtra - 422010</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
