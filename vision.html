@@ -55,6 +55,42 @@
         margin-top: 20px;
       }
     }
+    .rudra-logo {
+  width: 70px; /* default small size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomOut 1.2s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+  .rudra-logo {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rudra-logo {
+    width: 40px;
+  }
+}
+
   </style>
 </head>
 
@@ -63,7 +99,7 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
+<img src="r.png" alt="Rudra Metal Industries Logo" class="rudra-logo">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

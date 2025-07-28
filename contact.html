@@ -42,12 +42,12 @@
     }
 
     .contact-box {
-      background: rgba(15, 15, 15, 0.05);
+      background: rgba(20, 20, 20, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       padding: 40px;
       transition: all 0.4s ease-in-out;
-      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+      box-shadow: 0 0 30px rgba(240, 24, 24, 0.1);
     }
 
     .contact-box:hover {
@@ -64,7 +64,7 @@
     .contact-box h5 {
       font-size: 20px;
       font-weight: 600;
-      color: #050505;
+      color: #a01e1e;
       margin-bottom: 10px;
     }
 
@@ -83,6 +83,42 @@
         transform: translateY(0);
       }
     }
+    .rudra-logo {
+  width: 70px; /* default small size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomOut 1.2s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+  .rudra-logo {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rudra-logo {
+    width: 40px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -90,7 +126,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand text-white" href="#"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
+<img src="r.png" alt="Rudra Metal Industries Logo" class="rudra-logo">
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -138,7 +174,7 @@
   <!-- Contact Section -->
   <section class="contact-section text-center">
     <div class="container">
-      <h3 class="section-title">📞 Contact Information</h3>
+      <h5 class="section-title">📞 Contact Information</h5>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4">
           <div class="contact-box">

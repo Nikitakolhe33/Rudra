@@ -88,6 +88,43 @@
   background-color: #0ef;
   color: #000 !important;
 }
+.rudra-logo {
+  width: 70px; /* default small size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomOut 1.2s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+  .rudra-logo {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rudra-logo {
+    width: 40px;
+  }
+}
+
+
 
   </style>
 </head>
@@ -101,7 +138,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
+    
+<img src="r.png" alt="Rudra Metal Industries Logo" class="rudra-logo">
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -184,7 +222,7 @@
       <div class="row g-4">
         <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100">
-            <img src="m3.png"card-img-top" alt="Service 1">
+            <img src="m3.png"card-img-top alt="Service 1">
             <div class="card-body text-center">
               <h5 class="card-title"><i class="fas fa-cogs me-2"></i>Custom Metal Fabrication</h5>
               <p class="card-text">Precision-crafted metal parts designed to match your specifications.</p>
@@ -226,15 +264,17 @@
       </div>
       <div class="col-md-6" data-aos="fade-left">
         <div class="ratio ratio-4x3 rounded-4 shadow">
-          <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.748404416397!2d73.7335986!3d19.9517471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddecafb71b21c9%3A0xa6dab4828bb274df!2sMIDC%20Ambad%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721989234567!5m2!1sen!2sin" 
-          width="100%" 
-          height="300" 
-          style="border:0; border-radius: 10px;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+         <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.059883448057!2d73.7334303!3d19.9642909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddec0fdce0b75b%3A0x2796fdfc5a0707db!2sRudra%20Metal%20Industries!5e0!3m2!1sen!2sin!4v1722144702189!5m2!1sen!2sin" 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 10px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
         </div>
       </div>
     </div>
