@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Operation - Rudra Metal</title>
+  <title>Products - Rudra Metal</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
       color: #000;
     }
 
-    .custom-card {
+    .product-card {
       background-color: #000;
       color: #fff;
       border-radius: 15px;
@@ -39,12 +39,12 @@
       transition: 0.4s ease;
     }
 
-    .custom-card:hover {
+    .product-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.7);
     }
 
-    .custom-img {
+    .product-img {
       width: 100%;
       height: 250px;
       object-fit: cover;
@@ -70,34 +70,27 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#"><i class="fas fa-industry me-2"></i>Rudra Metal</a>
-     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown">About</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
             <ul class="dropdown-menu bg-dark">
               <li><a class="dropdown-item text-white" href="vision.html">Vision</a></li>
               <li><a class="dropdown-item text-white" href="mission.html">Mission</a></li>
             </ul>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product</a>
-            <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item text-white" href="operation.html">Operation</a></li>
-              <li><a class="dropdown-item text-white" href="clientele.html">Clientele</a></li>
-              <li><a class="dropdown-item text-white" href="quality.html">Quality</a></li>
-              <li><a class="dropdown-item text-white" href="infrastructure.html">Infrastructure</a></li>
-            </ul>
-          </li> -->
-                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
-         <li class="nav-item"><a class="nav-link" href="core value.html">Core Values</a></li>
-             <li class="nav-item"><a class="nav-link" href="operation.html">Operation</a></li>
+
+          <li class="nav-item"><a class="nav-link active" href="product.html">Product</a></li>
+                   <li class="nav-item"><a class="nav-link" href="core value.html">Core Values</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="operation.html">Operation</a></li>
 
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Core Value</a>
@@ -116,52 +109,52 @@
   </nav>
   <!-- Navbar End -->
 
-  <!-- Main Section Start -->
+  <!-- Product Section Start -->
   <section class="py-5">
     <div class="container">
-      <h2 class="section-title animate__animated animate__fadeInDown">Our Operations</h2>
+      <h2 class="section-title animate__animated animate__fadeInDown">Our Product Line</h2>
       <div class="row g-4">
 
-        <!-- Operation Card -->
+        <!-- Product 1 -->
         <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp">
-          <div class="custom-card text-center">
-            <img src="https://images.unsplash.com/photo-1603899121523-260cd51d9d5d" class="custom-img" alt="Operation">
-            <h5>Manufacturing</h5>
-            <p>Advanced manufacturing process with skilled team and precision-driven systems.</p>
+          <div class="product-card text-center">
+            <img src="https://images.unsplash.com/photo-1548092372-0d1bd40894a3" class="product-img" alt="Casting">
+            <h5>Steel Casting</h5>
+            <p>Premium grade castings used across industrial projects and heavy machinery.</p>
           </div>
         </div>
 
-        <!-- Clientele Card -->
+        <!-- Product 2 -->
         <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="custom-card text-center">
-            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abb2a" class="custom-img" alt="Clientele">
-            <h5>Clientele</h5>
-            <p>Serving major industrial giants with consistent quality and service excellence.</p>
+          <div class="product-card text-center">
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2" class="product-img" alt="Machinery">
+            <h5>Machined Components</h5>
+            <p>Precision-machined parts made with CNC for tight tolerances and reliability.</p>
           </div>
         </div>
 
-        <!-- Quality Card -->
+        <!-- Product 3 -->
         <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="custom-card text-center">
-            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095" class="custom-img" alt="Quality">
-            <h5>Quality</h5>
-            <p>Quality is at the core of every product – from sourcing to final delivery.</p>
+          <div class="product-card text-center">
+            <img src="https://images.unsplash.com/photo-1581092919537-1c4c19f3c1f3" class="product-img" alt="Fabrication">
+            <h5>Fabricated Units</h5>
+            <p>Custom fabrication projects tailored to client needs with high quality metals.</p>
           </div>
         </div>
 
-        <!-- Infrastructure Card -->
+        <!-- Product 4 -->
         <div class="col-md-6 col-lg-3 animate__animated animate__fadeInUp animate__delay-3s">
-          <div class="custom-card text-center">
-            <img src="https://images.unsplash.com/photo-1581090700227-1e8c6c8c31f9" class="custom-img" alt="Infrastructure">
-            <h5>Infrastructure</h5>
-            <p>Modern infrastructure with fully equipped machinery and automation systems.</p>
+          <div class="product-card text-center">
+            <img src="https://images.unsplash.com/photo-1617191518000-e8d1e5b73d8c" class="product-img" alt="Assembly">
+            <h5>Industrial Assemblies</h5>
+            <p>Assembled mechanical products built for endurance in high-load environments.</p>
           </div>
         </div>
 
       </div>
     </div>
   </section>
-  <!-- Main Section End -->
+  <!-- Product Section End -->
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
